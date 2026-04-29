@@ -22,11 +22,14 @@ function Navbar() {
           "url('https://res.cloudinary.com/dijoz9ie7/image/upload/v1772056991/Gemini_Generated_Image_ieqpm7ieqpm7ieqp_pnbpdr.png')",
       }}
     >
-      <div className="container mx-auto flex justify-center items-center p-4 lg:p-7">
-        <div className="flex-initial flex md:justify-center lg:justify-start xl:justify-end w-100 lg:w-85 xl:w-100 transition-all duration-400">
+      <div className="container mx-auto flex justify-center items-center p-4 lg:p-4">
+        <div
+          className="flex-initial -mr-30 md:mr-0  flex md:justify-center lg:justify-start xl:justify-end lg:w-85 xl:w-100
+         transition-all duration-400"
+        >
           <Image
-            className="w-auto md:w-30 lg:w-38 xl:w-43"
-            src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1771399001/alqawaemcpa-logo-nobackground_hufd28.png"
+            className="w-auto h-30 md:w-30 md:h-20 lg:w-38 xl:w-25 xl:h-20 "
+            src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1777494326/copy_of_prime_auditors_n1uwcx_bdb1c7.png"
             alt="Logo"
             width={180}
             height={180}

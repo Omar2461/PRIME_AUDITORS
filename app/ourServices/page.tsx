@@ -1,5 +1,5 @@
-import OurServices from "../components/pages/OurServices";
-import Pane from "../components/Pane";
+import OurServices from "../../features/services/OurServices";
+import Pane from "../../components/Pane";
 
 function page() {
   return (

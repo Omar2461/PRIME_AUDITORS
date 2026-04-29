@@ -4,7 +4,7 @@ import { Tajawal } from "next/font/google";
 import { DropdownProvider } from "@/context/DropdownContext";
 import { PageProvider } from "@/context/PagesContext";
 
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],

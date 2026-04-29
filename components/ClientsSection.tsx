@@ -2,7 +2,7 @@
 import { useRef } from "react";
 
 import { motion } from "framer-motion";
-import ClientsSlider from "../ClientsSlider";
+import ClientsSlider from "./ClientsSlider";
 
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";

@@ -1,5 +1,5 @@
-import Blog from "../components/pages/Blog";
-import Pane from "../components/Pane";
+import Blog from "../../features/blog/Blog";
+import Pane from "../../components/Pane";
 
 function page() {
   return (

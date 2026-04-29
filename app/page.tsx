@@ -1,10 +1,10 @@
-import Hero from "./components/Hero";
-import AboutUs from "./components/pages/AboutUs";
+import Hero from "../components/Hero";
+import AboutUs from "../features/about/AboutUs";
 
-import WhyChooseUs from "./components/pages/WhyChooseUs";
-import OurServicesSection from "./components/sections/OurServicesSection";
-import OurBlogSection from "./components/sections/OurBlogSection";
-import ClientsSection from "./components/sections/ClientsSection";
+import WhyChooseUs from "../features/about/WhyChooseUs";
+import OurServicesSection from "../features/services/OurServicesSection";
+import OurBlogSection from "../features/blog/OurBlogSection";
+import ClientsSection from "../components/ClientsSection";
 // import Footer from "./components/Footer";
 
 function page() {

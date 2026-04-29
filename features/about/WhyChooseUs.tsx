@@ -5,7 +5,7 @@ import { IoMdSettings } from "react-icons/io";
 import { FaBookReader } from "react-icons/fa";
 
 import { motion } from "framer-motion";
-import FeatureCard from "../FeatureCard";
+import FeatureCard from "../../components/FeatureCard";
 
 const features = [
   {

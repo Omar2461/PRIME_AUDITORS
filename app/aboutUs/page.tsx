@@ -1,7 +1,7 @@
-import AboutUs from "../components/pages/AboutUs";
-import WhyChooseUs from "../components/pages/WhyChooseUs";
-import Pane from "../components/Pane";
-import ClientsSection from "../components/sections/ClientsSection";
+import AboutUs from "../../features/about/AboutUs";
+import WhyChooseUs from "../../features/about/WhyChooseUs";
+import Pane from "../../components/Pane";
+import ClientsSection from "../../components/ClientsSection";
 
 function page() {
   return (
