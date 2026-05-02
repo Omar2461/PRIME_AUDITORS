@@ -9,14 +9,12 @@ import { MdWhatsapp } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 
 export default function Hero() {
-
   return (
     <section className="relative overflow-hidden bg-cover bg-center">
       <Image
         src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1771697534/Gemini_Generated_Image_k4lmkbk4lmkbk4lm_az0jxd.png"
         alt="background"
         fill
-        
         className="object-cover -z-10"
       />
       <div
@@ -40,7 +38,7 @@ export default function Hero() {
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
-              القوائم الأولى - محاسبون ومراجعون قانونيون
+              PRIME AUDITORS - Public Accountants & Consultants
             </motion.div>
           </h1>
 
@@ -64,9 +62,10 @@ export default function Hero() {
            md:text-xl leading-relaxed w-90 md:w-110 lg:w-140 2xl:w-140 md:absolute sm:-mr-3 mt-6 md:mr-0 md:bottom-64 md:right-2 md:pl-8
            lg:pl-0 lg:bottom-75 2xl:right-54 xl:right-20 xl:items-center xl:bottom-83 2xl:bottom-75 xl:text-md tracking-[.25em] transition-all duration-400 "
         >
-          في شركة القوائم الأولى نضع خبرتنا المحاسبية بين يديك لنساعدك على تحقيق
-          أهدافك المالية بكفاءة وموثوقية. ملتزمين بتقديم حلول دقيقة ومبتكرة
-          ومتوافقة مع أعلى المعايير المهنية.
+          مكتب برايم للإستشارات هو إحدى مكاتب الخدمات المهنية المحترفة في مصر،
+          ويقدم خدمات المراجعة والتدقيق، والخدمات الضريبية المختلفة، والاستشارات
+          القانونية، والاستشارات المالية لمجموعة واسعة من العملاء المحليين
+          والمتعددة الجنسيات.
         </motion.div>
 
         <motion.div

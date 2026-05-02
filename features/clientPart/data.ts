@@ -1,0 +1,17 @@
+export const Clients=[
+     "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714275/logo_sla7ma.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714274/images_yn1srq.png",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714274/images_o9lbf8.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714274/images_6_omh7pp.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714274/images_5_ovfd5o.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714273/images_4_kakiha.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/images_3_wn3h9f.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/images_2_lsx32p.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/fb_logo_r99jpr.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/images_1_ozzvow.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/3787066_bssgke.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/Sigmatec-Pharm-Egypt-24207-1502185419_mbsfmb.webp",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/a8ff7d7388ee950f05dc5921c427182d_jt01pf.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/779_qxwu3p.jpg",
+    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/rooya-group-1667464945_qs1sby.webp",
+]

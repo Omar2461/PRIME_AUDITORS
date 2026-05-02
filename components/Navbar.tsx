@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <nav
-      className="bg-[#f3f0e6] shadow-md relative top-0 left-0 w-full z-50 bg-cover bg-center"
+      className="bg-[#f3f0e6] shadow-md relative top-0 left-0 md:pr-5 md:pl-5 xl:pl-0 xl:pr-0 w-full z-50 bg-cover bg-center "
       style={{
         backgroundImage:
           "url('https://res.cloudinary.com/dijoz9ie7/image/upload/v1772056991/Gemini_Generated_Image_ieqpm7ieqpm7ieqp_pnbpdr.png')",
@@ -24,11 +24,11 @@ function Navbar() {
     >
       <div className="container mx-auto flex justify-center items-center p-4 lg:p-4">
         <div
-          className="flex-initial -mr-30 md:mr-0  flex md:justify-center lg:justify-start xl:justify-end lg:w-85 xl:w-100
+          className="flex-initial -mr-30 md:mr-0  flex md:justify-center lg:justify-start  lg:w-fit xl:w-fit
          transition-all duration-400"
         >
           <Image
-            className="w-auto h-30 md:w-30 md:h-20 lg:w-38 xl:w-25 xl:h-20 "
+            className="w-27 h-25 md:w-30 md:h-20 lg:w-26 xl:w-25 xl:h-20 "
             src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1777494326/copy_of_prime_auditors_n1uwcx_bdb1c7.png"
             alt="Logo"
             width={180}
@@ -39,7 +39,7 @@ function Navbar() {
 
         <NavLinks />
 
-        <div className="hidden md:flex md:flex-initial md:justify-center xl:justify-start md:w-120 text-black">
+        <div className="hidden md:flex md:flex-initial md:justify-center xl:justify-end md:w-60 xl:w-50 text-black">
           <Button href="https://wa.me/201142563801">
             تواصل معنا
             <MdWhatsapp />

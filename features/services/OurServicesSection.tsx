@@ -26,7 +26,7 @@ function OurServicesSection() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2 }}
           viewport={{ once: true }}
-          className="text-gray-600 max-w-2xl mx-auto w-80"
+          className="text-gray-600 max-w-2xl mx-auto w-80 md:w-full "
         >
           عملكم محل اهتمامنا لذلك نقدم لكم مجموعة من الخدمات المتميزة لنساهم في
           تنمية أعمالكم

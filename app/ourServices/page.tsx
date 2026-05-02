@@ -1,5 +1,6 @@
 import OurServices from "../../features/services/OurServices";
 import Pane from "../../components/Pane";
+import Footer from "@/components/Footer";
 
 function page() {
   return (
@@ -8,7 +9,9 @@ function page() {
         title="خدماتنا"
         details="عملكم محل اهتمامنا لذلك نقدم لكم مجموعة من الخدمات المتميزة لنساهم في تنمية أعمالكم"
       />
-      <OurServices />
+      <OurServices className="h-screen flex justify-center items-center"/>
+
+      <Footer/>
     </div>
   );
 }

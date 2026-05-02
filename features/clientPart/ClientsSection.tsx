@@ -2,20 +2,15 @@
 import { useRef } from "react";
 
 import { motion } from "framer-motion";
-import ClientsSlider from "./ClientsSlider";
+import ClientsSlider from "./components/ClientsSlider";
 
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
+import { Clients } from "./data";
+
 function ClientsSection() {
-  const Logo = [
-    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1774689836/Frame-11_nwoisl.webp",
-    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1774689834/Frame-22_yzsmx0.webp",
-    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1774689833/Frame-8_u0jggn.webp",
-    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1774689833/Frame-10_npyjme.webp",
-    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1774689833/Frame-7_f34j4h.webp",
-    "https://res.cloudinary.com/dijoz9ie7/image/upload/v1774689833/Frame-9_ysm2dp.webp",
-  ];
+  const Logo = Clients;
 
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
@@ -40,7 +35,7 @@ function ClientsSection() {
         className="text-gray-600 max-w-3xl mx-auto"
       >
         نفتخر بثقة نخبة من عملائنا الذين شاركونا مسيرة النجاح، وكانوا جزءًا من
-        رحلتنا في تقديم حلول مالية ومحاسبية مبتكرة
+        رحلتنا في تقديم حلول مختلفة
       </motion.p>
 
       <motion.div

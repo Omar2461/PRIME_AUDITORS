@@ -1,7 +1,8 @@
 import AboutUs from "../../features/about/AboutUs";
 import WhyChooseUs from "../../features/about/WhyChooseUs";
 import Pane from "../../components/Pane";
-import ClientsSection from "../../components/ClientsSection";
+import ClientsSection from "@/features/clientPart/ClientsSection";
+import Footer from "@/components/Footer";
 
 function page() {
   return (
@@ -13,6 +14,8 @@ function page() {
       <AboutUs />
       <WhyChooseUs />
       <ClientsSection />
+
+      <Footer/>
     </div>
   );
 }

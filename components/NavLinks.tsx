@@ -17,7 +17,7 @@ function NavLinks({className}: {className?: string}) {
     return (
       <li
         key={idx}
-        className={`w-20 h-9 flex justify-center border-b-[3px]  items-center 
+        className={`w-20 h-9  flex justify-center border-b-[3px]  items-center 
          hover:border-b-3 hover:border-[#A9963A] hover:text-[#A9963A] transition-colors duration-450
         ${isOpen == name ? "border-b-3 border-[#A9963A] text-[#A9963A]" : "border-transparent text-black"}
          `}

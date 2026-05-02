@@ -8,7 +8,7 @@ function OurServices({ className }: { className?: string }) {
   const services = servicesData;
 
   return (
-    <section className={`bg-gray-100 pt-20 ${className || ""}`}>
+    <section className={`bg-gray-100 ${className || ""}`}>
       <div className="max-w-7xl mx-auto xl:px-35">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
           {services.map((service, index) => (

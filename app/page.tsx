@@ -4,8 +4,8 @@ import AboutUs from "../features/about/AboutUs";
 import WhyChooseUs from "../features/about/WhyChooseUs";
 import OurServicesSection from "../features/services/OurServicesSection";
 import OurBlogSection from "../features/blog/OurBlogSection";
-import ClientsSection from "../components/ClientsSection";
-// import Footer from "./components/Footer";
+import ClientsSection from "@/features/clientPart/ClientsSection";
+import Footer from "@/components/Footer";
 
 function page() {
   return (
@@ -18,7 +18,7 @@ function page() {
       <OurBlogSection />
       <ClientsSection />
 
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
