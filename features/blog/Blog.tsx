@@ -47,7 +47,12 @@ function Blog({ className }: { className?: string }) {
               </p>
 
               <button className="mt-4 text-[#E11B35] font-semibold hover:underline hover:cursor-pointer">
-                <Link href={`/blog/${item.id}`}>اقرأ المزيد</Link>
+                <Link
+                  href={`/blog/${item.slug}`}
+                  className="mt-4 text-[#b89b6b] font-semibold hover:underline"
+                >
+                  اقرأ المزيد
+                </Link>
               </button>
             </div>
 
