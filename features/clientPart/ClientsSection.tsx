@@ -16,13 +16,13 @@ function ClientsSection() {
   const nextRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <section className="bg-gray-100 text-center py-20">
+    <section className="bg-white text-center py-20">
       <motion.h2
         initial={{ opacity: 0, scale: 0.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="text-3xl font-bold text-[#6B6A55] mb-4"
+        className="text-3xl font-bold text-[#585656] mb-4"
       >
         أبرز عملائنا
       </motion.h2>

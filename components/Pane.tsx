@@ -1,6 +1,16 @@
-function Pane({ title, details,className }: { title: string; details: string; className?: string }) {
+function Pane({
+  title,
+  details,
+  date,
+  className,
+}: {
+  title?: string;
+  details?: string;
+  date?: string;
+  className?: string;
+}) {
   return (
-    <div className={`relative border border-black h-45 ${className || ''}`}>
+    <div className={`relative border border-black h-45 ${className || ""}`}>
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -9,13 +19,11 @@ function Pane({ title, details,className }: { title: string; details: string; cl
         }}
       ></div>
 
-      <div className="absolute inset-0 bg-[#4b4931]/90"></div>
+      <div className="absolute inset-0 bg-black/75"></div>
 
       <span className="absolute inset-0 flex flex-col text-center items-center justify-center text-white">
         <h2 className="text-3xl md:text-4xl font-bold  mb-4">{title}</h2>
-        <p className=" max-w-2xl mx-auto">
-          {details}
-        </p>
+        <p className=" max-w-2xl mx-auto">{details}</p>
       </span>
     </div>
   );

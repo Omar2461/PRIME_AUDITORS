@@ -15,13 +15,13 @@ function FeatureCard({ icon, details, title }: featureCardProps) {
       whileInView={{ opacity: 1, y: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="relative bg-[#f4f2e8] rounded-2xl shadow-lg p-8 text-center text-gray-800"
+      className="relative bg-white rounded-2xl shadow-lg p-8 text-center text-gray-800"
     >
-      <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#8c8868] w-16 h-16 rounded-xl flex items-center justify-center text-white text-4xl shadow">
+      <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-white w-16 h-16 rounded-xl flex items-center justify-center text-[#E11B35] text-4xl shadow">
         {icon}
       </div>
 
-      <h3 className="text-xl font-bold mt-8 mb-3 text-[#8c8868]"> {title}</h3>
+      <h3 className="text-xl font-bold mt-8 mb-3 text-black"> {title}</h3>
 
       <p className="text-sm leading-relaxed">{details}</p>
     </motion.div>

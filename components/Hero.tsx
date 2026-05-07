@@ -10,13 +10,20 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-cover bg-center">
-      <Image
+    <section className="bg-white relative overflow-hidden bg-cover bg-center">
+      {/* <Image
         src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1771697534/Gemini_Generated_Image_k4lmkbk4lmkbk4lm_az0jxd.png"
         alt="background"
         fill
         className="object-cover -z-10"
+      /> */}
+      <div
+        className="hidden md:block absolute right-0 top-0 h-full w-[35%] bg-[#E11B35] z-20"
+        style={{
+          clipPath: "polygon(100% 0, 100% 100%, 0 100%)",
+        }}
       />
+
       <div
         className="container text-center mx-auto h-200  md:px-6 lg:py-24 flex flex-col items-center sm:items-start md:flex-row pt-30 sm:pt-65 relative 
      xl:py-20 xl:pl-0 xl:pr-0 transition-all duration-400
@@ -28,7 +35,7 @@ export default function Hero() {
         "
         >
           <h1
-            className="flex flex-col text-center md:ml-15 xl:ml-0 text-[38px] sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-bold text-[#505041]
+            className="flex flex-col text-center md:ml-15 xl:ml-0 text-[38px] sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-bold text-[#585656]
         md:w-100 lg:w-fit transition-all duration-400
           "
           >
@@ -38,7 +45,10 @@ export default function Hero() {
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
-              PRIME AUDITORS - Public Accountants & Consultants
+              <span>المراجعون الرئيسيون</span>
+              {/* -  */}
+              <br />
+              <span>محاسبون قانونيون ومستشارون</span>
             </motion.div>
           </h1>
 
@@ -47,7 +57,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="w-80 sm:w-90 md:w-100 md:mr-8 md:mt-3 lg:mr-0 lg:ml-17 xl:ml-0 xl:mt-0 lg:text-[24px] text-[22px] text-[#909064] "
+            className="w-80 sm:w-90 md:w-100 md:mr-8 md:mt-3 lg:mr-0 lg:ml-17 xl:ml-0 xl:mt-0 lg:text-[24px] text-[22px] text-[#E11B35] "
           >
             نقود أعمالكم نحو استقرار مالي مستدام
           </motion.div>
@@ -59,7 +69,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
           className="md:flex md:justify-center text-center text-black text-[21px] 
-           md:text-xl leading-relaxed w-90 md:w-110 lg:w-140 2xl:w-140 md:absolute sm:-mr-3 mt-6 md:mr-0 md:bottom-64 md:right-2 md:pl-8
+           md:text-xl leading-relaxed w-90 md:w-110 lg:w-140 2xl:w-140 md:absolute sm:-mr-3 mt-6 md:mr-0 md:bottom-64 md:right-2 md:pl-8 z-30
            lg:pl-0 lg:bottom-75 2xl:right-54 xl:right-20 xl:items-center xl:bottom-83 2xl:bottom-75 xl:text-md tracking-[.25em] transition-all duration-400 "
         >
           مكتب برايم للإستشارات هو إحدى مكاتب الخدمات المهنية المحترفة في مصر،

@@ -16,7 +16,7 @@ function OurServicesSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-[#6B6A55] mb-4"
+          className="text-3xl md:text-4xl font-bold text-[#585656] mb-4"
         >
           خدماتنا
         </motion.div>

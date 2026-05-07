@@ -8,7 +8,7 @@ function OurServices({ className }: { className?: string }) {
   const services = servicesData;
 
   return (
-    <section className={`bg-gray-100 ${className || ""}`}>
+    <section className={`bg-white ${className || ""}`}>
       <div className="max-w-7xl mx-auto xl:px-35">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
           {services.map((service, index) => (
@@ -22,9 +22,10 @@ function OurServices({ className }: { className?: string }) {
               relative
               w-72.5
               h-72.5
-              bg-[#E7E3D4]
+              bg-[#]
+              text-black
               border-4
-              border-[#6B6A55]
+              border-[#E11B35]
               rounded-[50%]
               shadow-xl/30
               flex
@@ -35,11 +36,11 @@ function OurServices({ className }: { className?: string }) {
               "
             >
               <div>
-                <h3 className="text-xl font-bold text-[#6B6A55] mb-3">
+                <h3 className="text-xl font-bold mb-3">
                   {service.title}
                 </h3>
 
-                <p className="text-sm text-gray-700 leading-relaxed">
+                <p className="text-sm leading-relaxed">
                   {service.desc}
                 </p>
               </div>

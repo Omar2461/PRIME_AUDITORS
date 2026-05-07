@@ -16,11 +16,11 @@ function Navbar() {
 
   return (
     <nav
-      className="bg-[#f3f0e6] shadow-md relative top-0 left-0 md:pr-5 md:pl-5 xl:pl-0 xl:pr-0 w-full z-50 bg-cover bg-center "
-      style={{
-        backgroundImage:
-          "url('https://res.cloudinary.com/dijoz9ie7/image/upload/v1772056991/Gemini_Generated_Image_ieqpm7ieqpm7ieqp_pnbpdr.png')",
-      }}
+      className="bg-white shadow-md relative top-0 left-0 md:pr-5 md:pl-5 xl:pl-0 xl:pr-0 w-full z-50 bg-cover bg-center "
+      // style={{
+      //   backgroundImage:
+      //     "url('https://res.cloudinary.com/dijoz9ie7/image/upload/v1772056991/Gemini_Generated_Image_ieqpm7ieqpm7ieqp_pnbpdr.png')",
+      // }}
     >
       <div className="container mx-auto flex justify-center items-center p-4 lg:p-4">
         <div
@@ -29,7 +29,7 @@ function Navbar() {
         >
           <Image
             className="w-27 h-25 md:w-30 md:h-20 lg:w-26 xl:w-25 xl:h-20 "
-            src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1777494326/copy_of_prime_auditors_n1uwcx_bdb1c7.png"
+            src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1778142772/ChatGPT_Image_May_7_2026_11_31_38_AM_jj8mvo.png"
             alt="Logo"
             width={180}
             height={180}
@@ -47,14 +47,14 @@ function Navbar() {
         </div>
         {isOpen ? (
           <div
-            className="md:hidden bg-[#b8b8a4] w-9 h-9 flex justify-center items-center absolute left-12 bottom-10 text-3xl text-black"
+            className="md:hidden bg-red-600 w-9 h-9 flex justify-center items-center absolute left-12 bottom-10 text-3xl text-white"
             onClick={() => toggleDropdown()}
           >
             <IoMdClose />
           </div>
         ) : (
           <div
-            className="md:hidden bg-[#b8b8a4] w-9 h-9 flex justify-center items-center absolute left-12 bottom-10 text-3xl text-black"
+            className="md:hidden bg-red-600 w-9 h-9 flex justify-center items-center absolute left-12 bottom-10 text-3xl text-white"
             onClick={() => toggleDropdown()}
           >
             <IoMenuOutline />

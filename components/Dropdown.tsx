@@ -27,7 +27,7 @@ function Dropdown() {
     <ul
       className={`
     absolute top-full left-0 w-full
-    bg-[#6B6D55] shadow-md text-white
+    bg-black/85 shadow-xl/30 rounded-lg text-white
     transition-all duration-300 ease-in-out
     origin-top
     ${

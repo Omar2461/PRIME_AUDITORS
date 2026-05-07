@@ -5,6 +5,7 @@ import { blogData } from "./data";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
+import Link from "next/link";
 
 function Blog({ className }: { className?: string }) {
   const articles = blogData;
@@ -45,8 +46,8 @@ function Blog({ className }: { className?: string }) {
                 {item.desc}
               </p>
 
-              <button className="mt-4 text-[#b89b6b] font-semibold hover:underline">
-                اقرأ المزيد
+              <button className="mt-4 text-[#E11B35] font-semibold hover:underline hover:cursor-pointer">
+                <Link href={`/blog/${item.id}`}>اقرأ المزيد</Link>
               </button>
             </div>
 

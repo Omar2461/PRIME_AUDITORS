@@ -12,18 +12,18 @@ import { Fragment } from "react/jsx-runtime";
 
 function AboutUs() {
   return (
-    <section className="bg-[#f4f4f4] py-30 px-6 sm:py-30 sm:px-15 2xl:py-30 transition-all duration-400">
+    <section className="bg-white py-30 px-6 sm:py-30 sm:px-15 2xl:py-30 transition-all duration-400">
       <div className="max-w-6xl mx-auto">
         <div className="relative flex flex-col 2xl:w-250 2xl:h-100 2xl:mr-20 sm:flex-row lg:flex-row items-center sm:items-start gap-16 ">
           {aboutUsdata.map((data) => (
             <Fragment key={data.id}>
-              <div className="w-full sm:w-70 sm:mt-10 lg:mt-20 2xl:mt-10 flex flex-col md:items-center lg:w-1/2 text-center space-y-10">
+              <div className="w-full sm:w-70 sm:mt-10 lg:mt-20 2xl:mt-10 flex flex-col md:items-center lg:w-1/2 text-center  space-y-10">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.6 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 1 }}
                   viewport={{ once: true }}
-                  className="text-4xl font-bold text-[#3f3f3f]"
+                  className="text-4xl font-bold text-[#585656]"
                 >
                   {data.title}
                 </motion.div>

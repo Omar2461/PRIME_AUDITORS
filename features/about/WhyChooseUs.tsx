@@ -53,7 +53,7 @@ function WhyChooseUs() {
         }}
       ></div>
 
-      <div className="absolute inset-0 bg-[#4b4931]/90"></div>
+      <div className="absolute inset-0 bg-black/75"></div>
 
       <div className="relative max-w-6xl mx-auto px-6 text-center text-white">
         <motion.div
@@ -61,7 +61,7 @@ function WhyChooseUs() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold mb-4"
+          className="text-3xl md:text-4xl font-bold mb-4 text-[#e3e3e3]"
         >
           لماذا تختارنا؟
         </motion.div>

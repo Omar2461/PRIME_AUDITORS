@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function OurBlogSection() {
   return (
-    <div className="relative bg-[#ebebe7]">
+    <div className="relative bg-white">
       <Blog className="pt-60 pb-30" />
       <div className=" text-center h-fit md:flex md:items-center absolute top-20 left-4 right-4 md:left-12 md:right-12 xl:right-36 xl:left-36 2xl:right-70 ">
         <motion.div
@@ -16,7 +16,7 @@ function OurBlogSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-4xl font-bold text-[#6B6A55] mb-5 md:mb-0 md:w-40 lg:w-fit"
+          className="text-4xl md:text-4xl font-bold text-[#585656] mb-5 md:mb-0 md:w-40 lg:w-fit"
         >
           آخر المقالات
         </motion.div>
