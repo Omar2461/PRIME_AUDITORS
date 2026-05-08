@@ -19,6 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `${article.title} | Prime Auditors`
       : "مقالة | Prime Auditors",
     description: article?.desc,
+    icons:{
+      icon: "/logoF.svg",
+    }
   };
 }
 
@@ -27,7 +30,7 @@ export default async function Page({ params }: Props) {
   const data=blogData.find((item)=>item.slug===slug);
   return (
     <>
-      <Pane title={data?.title} details={data?.desc} date={data?.date} />
+      <Pane title={data?.title}  date={data?.date} />
       <BlogPost slug={slug} />
     </>
   );

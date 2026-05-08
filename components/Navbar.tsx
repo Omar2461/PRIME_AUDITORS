@@ -22,13 +22,13 @@ function Navbar() {
       //     "url('https://res.cloudinary.com/dijoz9ie7/image/upload/v1772056991/Gemini_Generated_Image_ieqpm7ieqpm7ieqp_pnbpdr.png')",
       // }}
     >
-      <div className="container mx-auto flex justify-center items-center p-4 lg:p-4">
+      <div className="container mx-auto flex md:justify-center items-center p-4">
         <div
-          className="flex-initial -mr-30 md:mr-0  flex md:justify-center lg:justify-start  lg:w-fit xl:w-fit
+          className=" flex mr-5 md:mr-0 md:justify-center lg:justify-start lg:w-fit xl:w-fit
          transition-all duration-400"
         >
           <Image
-            className="w-27 h-25 md:w-30 md:h-20 lg:w-26 xl:w-25 xl:h-20 "
+            className="w-27 h-25 md:w-30 md:h-20 lg:w-26 xl:w-25 xl:h-20"
             src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1778142772/ChatGPT_Image_May_7_2026_11_31_38_AM_jj8mvo.png"
             alt="Logo"
             width={180}

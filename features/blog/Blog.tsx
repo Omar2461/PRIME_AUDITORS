@@ -14,7 +14,7 @@ function Blog({ className }: { className?: string }) {
     <section
       className={`py-16 px-4 sm:px-8 md:px-10 lg:px-15 2xl:px-50 ${className || ""}`}
     >
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 place-items-center">
+      <div className="flex flex-col md:max-w-6xl flex-wrap md:flex-row gap-8 place-items-center">
         {articles.map((item) => (
           <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -23,7 +23,7 @@ function Blog({ className }: { className?: string }) {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
             key={item.id}
-            className="bg-white rounded-2xl shadow-md overflow-hidden w-85 lg:w-110 xl:w-85 hover:shadow-xl transition-shadow duration-300"
+            className="bg-white rounded-2xl shadow-md overflow-hidden w-85 md:w-80 lg:w-105 xl:w-85 hover:shadow-xl transition-shadow duration-300"
           >
             <div className="relative h-48 w-full overflow-hidden">
               <div className="absolute inset-0 bg-linear-to-b from-black/0 to-black/20 "></div>
@@ -46,10 +46,10 @@ function Blog({ className }: { className?: string }) {
                 {item.desc}
               </p>
 
-              <button className="mt-4 text-[#E11B35] font-semibold hover:underline hover:cursor-pointer">
+              <button className="mt-4 font-semibold hover:underline hover:cursor-pointer">
                 <Link
                   href={`/blog/${item.slug}`}
-                  className="mt-4 text-[#b89b6b] font-semibold hover:underline"
+                  className="mt-4 text-[#E11B35] font-semibold hover:underline"
                 >
                   اقرأ المزيد
                 </Link>

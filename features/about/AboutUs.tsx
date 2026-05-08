@@ -56,7 +56,7 @@ function AboutUs() {
                 whileInView={{ opacity: 1, y: 1 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="w-fit absolute -bottom-20 right-20 sm:right-60 lg:right-95 xl:right-120 2xl:right-105"
+                className="w-fit absolute -bottom-20 right-24 sm:right-60 lg:right-95 xl:right-120 2xl:right-105"
               >
                 <Button href="https://wa.me/201142563801">
                   تواصل معنا

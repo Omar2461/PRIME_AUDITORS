@@ -9,7 +9,7 @@ function page() {
         title="خدماتنا"
         details="عملكم محل اهتمامنا لذلك نقدم لكم مجموعة من الخدمات المتميزة لنساهم في تنمية أعمالكم"
       />
-      <OurServices className="h-screen flex justify-center items-center"/>
+      <OurServices className="flex justify-center items-center py-10"/>
 
       <Footer/>
     </div>

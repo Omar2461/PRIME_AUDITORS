@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function OurBlogSection() {
   return (
-    <div className="relative bg-white">
+    <div className="flex justify-center relative bg-white">
       <Blog className="pt-60 pb-30" />
       <div className=" text-center h-fit md:flex md:items-center absolute top-20 left-4 right-4 md:left-12 md:right-12 xl:right-36 xl:left-36 2xl:right-70 ">
         <motion.div

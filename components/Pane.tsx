@@ -23,7 +23,7 @@ function Pane({
 
       <span className="absolute inset-0 flex flex-col text-center items-center justify-center text-white">
         <h2 className="text-3xl md:text-4xl font-bold  mb-4">{title}</h2>
-        <p className=" max-w-2xl mx-auto">{details}</p>
+        <p className=" max-w-2xl mx-auto">{details}{date}</p>
       </span>
     </div>
   );
