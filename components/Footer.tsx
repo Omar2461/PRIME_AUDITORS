@@ -45,7 +45,7 @@ function Footer() {
       <div className="flex flex-col items-center h-fit">
         <Image
           className="w-35 h-35 md:w-30 md:h-30 lg:w-26 xl:w-50 xl:h-50 "
-          src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1778142772/ChatGPT_Image_May_7_2026_11_31_38_AM_jj8mvo.png"
+          src="https://res.cloudinary.com/dijoz9ie7/image/upload/v1778244615/ChatGPT_Image_May_8_2026_03_48_43_PM_dalhjc.png"
           alt="Logo"
           width={180}
           height={180}

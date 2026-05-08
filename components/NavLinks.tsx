@@ -2,12 +2,17 @@
 
 import Link from "next/link";
 
+import { usePathname } from "next/navigation";
+
 import { useState } from "react";
 import { useLinks } from "@/context/PagesContext";
 
 function NavLinks({className}: {className?: string}) {
   const [isOpen, setIsOpen] = useState("الرئيسية");
   const {links} = useLinks();
+
+   const pathname = usePathname().split("/")[1];
+
 
   const onClick = (name: string) => {
     setIsOpen(name);
@@ -18,8 +23,8 @@ function NavLinks({className}: {className?: string}) {
       <li
         key={idx}
         className={`w-20 h-9  flex justify-center border-b-[3px]  items-center 
-         hover:border-b-3 hover:border-red-600 hover:text-red-600 transition-colors duration-450
-        ${isOpen == name ? "border-b-3 border-red-600 text-red-600" : "border-transparent text-black"}
+         hover:border-b-3 hover:border-[#E11B35] hover:text-[#E11B35] transition-colors duration-450
+        ${pathname == href.split("/")[1] ? "border-b-3 border-[#E11B35] text-[#E11B35]" : "border-transparent text-black"}
          `}
       >
         <Link href={href} onClick={() => onClick(name)}>

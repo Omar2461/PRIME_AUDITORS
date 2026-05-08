@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useContext, createContext } from "react";
+import { useContext, createContext } from "react";
+
 
 const links = [
   { name: "الرئيسية", href: "/" },
-  { name: "من نحن؟", href: "/aboutUs" },
+  { name: "من نحن؟" ,href: "/aboutUs" },
   { name: "خدماتنا", href: "/ourServices" },
   { name: "المدونة", href: "/blog" },
 ];
@@ -16,25 +17,28 @@ type LinkType = {
 
 type pageContextType = {
   links: LinkType[];
-  selected: string;
-  onChange: (name: string) => void;
+  // selected: string;
+  // onChange: (name: string) => void;
 };
 
 const pagesContext = createContext<pageContextType>({
   links,
-  selected: "",
-  onChange: () => {},
+  // selected: "",
+  // onChange: () => {},
 });
 
-export function PageProvider({ children }: { children: React.ReactNode }) {
-  const [selected, seSelected] = useState("");
 
-  const onChange = (name: string) => {
-    seSelected(name);
-  };
+
+
+export function PageProvider({ children }: { children: React.ReactNode }) {
+  // const [selected, seSelected] = useState("");
+
+  // const onChange = (name: string) => {
+  //   seSelected(name);
+  // };
 
   return (
-    <pagesContext.Provider value={{ links, selected, onChange }}>
+    <pagesContext.Provider value={{ links }}>
       {children}
     </pagesContext.Provider>
   );
