@@ -1,4 +1,6 @@
 "use client";
+import { useT } from "next-i18next/client";
+
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 
@@ -8,6 +10,7 @@ import { MdWhatsapp } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 
 import Image from "next/image";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Map = dynamic(() => import("./Map"), {
   ssr: false,
@@ -16,6 +19,7 @@ const Map = dynamic(() => import("./Map"), {
 function Footer() {
   const [showMap, setShowMap] = useState(false);
   const ref = useRef(null);
+  const { t } = useT("links");
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -28,10 +32,10 @@ function Footer() {
   }, []);
 
   const links = [
-    { name: "الرئيسية", href: "/" },
-    { name: "من نحن", href: "/aboutUs" },
-    { name: "خدماتنا", href: "/ourServices" },
-    { name: "المدونة", href: "/blog" },
+    { name: "home", href: "/" },
+    { name: "about", href: "/aboutUs" },
+    { name: "services", href: "/ourServices" },
+    { name: "blog", href: "/blog" },
   ];
 
   return (
@@ -55,7 +59,7 @@ function Footer() {
 
       <div className="flex flex-col relative gap-6 z-10 text-white xl:mx-5 w-fit h-fit mt-5 mb-5 md:mb-0 md:mt-0 md:mx-2 lg:mx-4">
         <div className="flex items-center w-fit">
-          <h1 className="w-fit font-bold">روابط سريعة :</h1>
+          <h1 className="w-fit font-bold">{t("links")} :</h1>
 
           <div className="flex space-x-1.5 w-fit pr-5 md:pr-2">
             {links.map(({ name, href }) => (
@@ -64,14 +68,14 @@ function Footer() {
                 href={href}
                 className="hover:text-red-700 transition-colors duration-450"
               >
-                {name}
+                {t(name)}
               </Link>
             ))}
           </div>
         </div>
 
         <div className="flex items-center">
-          <h1 className="font-bold">تواصل معنا :</h1>
+          <h1 className="font-bold">{t("contact")} :</h1>
           <div className="flex gap-10 w-fit pr-7">
             <Link
               href={"https://wa.me/201142563801"}
@@ -92,6 +96,7 @@ function Footer() {
 
       <div ref={ref} className="flex flex-col xl:w-150 xl:h-60">
         {showMap ? <Map /> : <p>Loading map...</p>}
+        <LanguageSwitcher/>
       </div>
     </section>
   );

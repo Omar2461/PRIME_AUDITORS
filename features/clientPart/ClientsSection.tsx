@@ -1,4 +1,6 @@
 "use client";
+import { useT } from "next-i18next/client";
+
 import { useRef } from "react";
 
 import { motion } from "framer-motion";
@@ -10,6 +12,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Clients } from "./data";
 
 function ClientsSection() {
+  const { t } = useT("client");
   const Logo = Clients;
 
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -24,7 +27,7 @@ function ClientsSection() {
         viewport={{ once: true }}
         className="text-3xl font-bold text-[#585656] mb-4"
       >
-        أبرز عملائنا
+       {t("title")}
       </motion.h2>
 
       <motion.p
@@ -34,8 +37,7 @@ function ClientsSection() {
         viewport={{ once: true }}
         className="text-gray-600 max-w-3xl mx-auto"
       >
-        نفتخر بثقة نخبة من عملائنا الذين شاركونا مسيرة النجاح، وكانوا جزءًا من
-        رحلتنا في تقديم حلول مختلفة
+       {t("desc")}
       </motion.p>
 
       <motion.div

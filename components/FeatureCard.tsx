@@ -1,5 +1,7 @@
 "use client";
 
+import { useT } from "next-i18next/client";
+
 import { motion } from "framer-motion";
 
 type featureCardProps = {
@@ -8,7 +10,8 @@ type featureCardProps = {
   title: string;
 };
 
-function FeatureCard({ icon, details, title }: featureCardProps) {
+function FeatureCard({ icon, title }: featureCardProps) {
+  const { t } = useT("aboutUs");
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -21,9 +24,9 @@ function FeatureCard({ icon, details, title }: featureCardProps) {
         {icon}
       </div>
 
-      <h3 className="text-xl font-bold mt-8 mb-3 text-black"> {title}</h3>
+      <h3 className="text-xl font-bold mt-8 mb-3 text-black"> {t(`whyUs.cards.${title}.title`)}</h3>
 
-      <p className="text-sm leading-relaxed">{details}</p>
+      <p className="text-sm leading-relaxed">{t(`whyUs.cards.${title}.desc`)}</p>
     </motion.div>
   );
 }

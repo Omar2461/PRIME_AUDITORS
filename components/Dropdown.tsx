@@ -1,5 +1,7 @@
 "use client";
 
+import { useT } from "next-i18next/client";
+
 import { useDropdown } from "@/context/DropdownContext";
 import { useLinks } from "@/context/PagesContext";
 import Link from "next/link";
@@ -7,6 +9,8 @@ import Link from "next/link";
 function Dropdown() {
   const { isOpen, toggleDropdown } = useDropdown();
   const { links, selected, onChange } = useLinks();
+
+  const { t, i18n } = useT("links");
 
   const handleClick = (name: string) => {
     onChange(name);
@@ -16,8 +20,10 @@ function Dropdown() {
   const renderLinks = links.map(({ name, href }, idx) => {
     return (
       <Link key={idx} href={href} onClick={() => handleClick(name)}>
-        <li className={`border border-[#3E444C] p-2 ${selected == name ? "bg-[#3E444C]" : ""}`}>
-          {name}
+        <li
+          className={`border border-[#3E444C] p-2 ${selected == name ? "bg-[#3E444C]" : ""}`}
+        >
+          {t(name)}
         </li>
       </Link>
     );

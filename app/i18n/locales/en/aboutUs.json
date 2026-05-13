@@ -1,0 +1,42 @@
+{
+  "pane": {
+    "title": "Why Choose Us?",
+    "desc": "Get to know us better and discover how we make a difference in the world of accounting."
+  },
+  "about": {
+    "title": "Who are we ?",
+    "description": "Prime Consulting Office is one of the professional professional services firms in Egypt. It provides auditing and assurance services, various tax services, legal consulting, and financial advisory services to a wide range of local and multinational clients.",
+    "cards": {
+      "vision": {
+        "title": "Our Vision",
+        "desc": "We get closer to our clients’ business areas and strive to exceed their expectations from a holistic perspective, identifying different alternatives to accomplish their work in an acceptable manner."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "desc": "We are committed to providing integrated auditing, financial, and tax advisory services that help our clients achieve their goals with confidence and efficiency."
+      },
+      "values": {
+        "title": "Our Values",
+        "desc": "Integrity – Transparency – Commitment – Innovation – Quality"
+      }
+    }
+  },
+  "whyUs": {
+    "title": "Why Choose Us?",
+    "desc": "We carefully analyze the client’s needs and the requirements of the professional service to be delivered, while preparing a work plan for each service to achieve their objectives and maximize the possible benefit for them.",
+    "cards": {
+      "Success Partner": {
+        "title": "Success Partnerr",
+        "desc": "We believe that our clients’ success is the foundation of our own success, and we work to build long-term partnerships based on trust and professionalism."
+      },
+      "Customized Solutions": {
+        "title": "Customized Solutions",
+        "desc": "We work to provide an immediate solution to any professional or technical issue faced by the client, along with timely consultation in an environment of mutual respect."
+      },
+      "Trusted Expertise": {
+        "title": "Trusted Expertise",
+        "desc": "We have extensive experience in accounting and auditing, and we are committed to applying the highest standards to ensure accuracy and reliability."
+      }
+    }
+  }
+}

@@ -1,26 +1,10 @@
-import Hero from "../components/Hero";
-import AboutUs from "../features/about/AboutUs";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
-import WhyChooseUs from "../features/about/WhyChooseUs";
-import OurServicesSection from "../features/services/OurServicesSection";
-import OurBlogSection from "../features/blog/OurBlogSection";
-import ClientsSection from "@/features/clientPart/ClientsSection";
-import Footer from "@/components/Footer";
+export default async function Page() {
+  const cookieStore = await cookies();
 
-function page() {
-  return (
-    <main>
-      <Hero />
-      <AboutUs />
-      <WhyChooseUs />
+  const lang = cookieStore.get("lng")?.value || "en";
 
-      <OurServicesSection />
-      <OurBlogSection />
-      <ClientsSection />
-
-      <Footer />
-    </main>
-  );
+  redirect(`/${lang}`);
 }
-
-export default page;

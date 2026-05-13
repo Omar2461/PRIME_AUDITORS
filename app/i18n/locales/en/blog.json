@@ -1,0 +1,40 @@
+{
+  "pane": {
+    "title": "Blog",
+    "desc": "Follow our latest articles and discover the latest accounting news and tips that help you grow your business and make more accurate and informed financial decisions."
+  },
+  "title": "Latest Articles",
+  "details": "Follow our latest articles and discover the newest accounting news and tips that help you develop your business and make more accurate and informed financial decisions.",
+  "blogs": {
+    "Local content": {
+      "title": "Local content and its role in supporting the national economy and Vision 2030",
+      "desc": "Local content is considered one of the modern concepts that has gained increasing importance in recent years, especially after the launch of Egypt Vision 2030, which aims to diversify the national economy and strengthen reliance on local resources.",
+      "date": "November 6, 2025",
+      "content": [
+        "Local content is considered one of the modern concepts that has gained increasing importance in recent years, especially with the state’s direction toward diversifying the national economy and strengthening reliance on local resources in Egypt.",
+        "Local content refers to the percentage of national contribution in products and services, whether through Egyptian workforce, local raw materials, or services provided by national companies.",
+        "The government seeks to gradually increase this percentage across all sectors through initiatives and regulatory programs aimed at supporting local industry and strengthening the Egyptian economy.",
+        "For companies, applying local content strategies is not limited to compliance only; it represents a major investment opportunity, as entities with higher compliance levels gain better chances in projects and tenders and enjoy a stronger market reputation.",
+        "Specialized consulting in this field helps accurately determine the local contribution percentage and analyze possible improvement areas in procurement and expenses, aiming to achieve the highest levels of compliance and efficiency.",
+        "Strengthening local content also contributes to creating new job opportunities, developing national capabilities, and achieving economic sustainability through reliance on local resources and services.",
+        "Ultimately, local content is considered one of the key pillars for building a strong and sustainable economy, and it reflects companies’ commitment to their national responsibility toward society and the Egyptian economy."
+      ]
+    },
+
+    "Auditing": {
+      "title": "The Importance of Auditing and Account Review in Strengthening Financial Trust",
+      "desc": "Auditing and account review are considered among the most important elements that contribute to the stability and sustainability of the business environment. They are not merely a routine accounting procedure, but a fundamental tool to ensure transparency and build trust between the entity and its stakeholders.",
+      "date": "November 6, 2025",
+      "content": [
+        "Auditing and account review are considered among the most important elements that contribute to the stability and sustainability of the business environment. They are not merely a routine accounting procedure, but a fundamental tool to ensure transparency and build trust between the entity and its stakeholders.",
+        "In a world where economic challenges are accelerating and compliance requirements are increasing, financial auditing has become an essential necessity for any organization seeking success and sustainable growth.",
+        "Auditing aims to ensure the accuracy and correctness of financial statements and the company’s compliance with local and international accounting standards and regulations.",
+        "Professional auditors carefully review financial operations to detect any errors or irregularities that may affect the company’s financial position. Audit results are also used to improve internal control systems and ensure adherence to good governance principles.",
+        "The reports resulting from the auditing process help senior management make informed financial decisions based on real data, which reduces risks and increases the confidence of investors and financiers.",
+        "Auditing also contributes to enhancing the company’s image before regulatory authorities and the financial community.",
+        "In light of the digital transformation taking place in Egypt, the use of modern auditing technologies has become essential to improve efficiency and accuracy, such as artificial intelligence systems and big data analytics.",
+        "In short, auditing is not just a legal obligation; it is an investment in the credibility of the organization and a guarantee of its sustainable success in a business environment that demands transparency and professionalism."
+      ]
+    }
+  }
+}

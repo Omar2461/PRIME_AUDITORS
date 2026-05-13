@@ -1,5 +1,8 @@
 "use client";
 
+import { useT } from "next-i18next/client";
+
+
 import { FaHandshake } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import { FaBookReader } from "react-icons/fa";
@@ -10,14 +13,14 @@ import FeatureCard from "../../components/FeatureCard";
 const features = [
   {
     icon: <FaHandshake />,
-    title: "شريك نجاح",
+    title: "Success Partner",
     details:
       "نؤمن بأن نجاح عملائنا هو أساس نجاحنا، ونعمل لبناء شراكات طويلة  الأمد تقوم على الثقة والاحترافية",
   },
 
   {
     icon: <IoMdSettings />,
-    title: "حلول مخصصة",
+    title: "Customized Solutions",
     details:
     `العمل على توفير حل لأي مشكلة مهنية أو تقنية تواجه العميل على الفور مع التشاور في الوقت المناسب في بيئة من الاحترام 
     المتبادل`,
@@ -25,7 +28,7 @@ const features = [
 
   {
     icon: <FaBookReader />,
-    title: "خبرة موثوقة",
+    title: "Trusted Expertise",
     details:
       "نمتلك خبرة واسعة في المحاسبة والمراجعة، ونلتزم بتطبيق أعلى المعايير لضمان الدقة والموثوقية",
   },
@@ -43,6 +46,7 @@ const renderFeatures = features.map(({ icon, title, details }, idx) => {
 });
 
 function WhyChooseUs() {
+  const { t } = useT("aboutUs");
   return (
     <section className="relative py-20 overflow-hidden">
       <div
@@ -63,7 +67,7 @@ function WhyChooseUs() {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-bold mb-4 text-[#e3e3e3]"
         >
-          لماذا تختارنا؟
+          {t("whyUs.title")}
         </motion.div>
 
         <motion.div
@@ -73,7 +77,7 @@ function WhyChooseUs() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto text-sm md:text-base mb-16"
         >
-         نحرص بتحليل احتياجات العميل ومتطلبات الخدمة المهنية المطلوب تنفيذة. وإعداد خطة عمل لكل خدمة لتحقيق أهدافه وتحقيق اقصى نفع ممكن له 
+        {t("whyUs.desc")}
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

@@ -1,0 +1,22 @@
+{
+  "pane": {
+    "title": "Our Services",
+    "desc": "Your business is our priority, which is why we offer a range of distinguished services to help support the growth of your business."
+  },
+  "title": "Our Services",
+  "details": "You are our focus of attention; therefore, we offer you a range of distinguished services to contribute to the growth of your business.",
+  "Features": {
+    "audit": {
+      "title": "Audit and Assurance",
+      "details": "We have auditing tools and resources, and we take strong measures to carry out the required tasks at a high level of quality. We are also committed to the highest standards of independence, professional objectivity, and technical excellence."
+    },
+    "tax": {
+      "title": "Tax Consulting",
+      "details": "Representing clients before the Tax Authority, clarifying the company’s position and its compliance with applicable laws, as well as preparing the required memos and defenses in order to achieve the maximum possible tax savings for the company."
+    },
+    "Financial": {
+      "title": "Financial Consulting",
+      "details": "We provide a variety of strategic and financial advisory services to clients regarding corporate financing, valuation, and other business activities."
+    }
+  }
+}

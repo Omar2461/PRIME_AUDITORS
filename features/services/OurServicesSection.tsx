@@ -1,4 +1,5 @@
 "use client";
+import { useT } from "next-i18next/client";
 
 import { motion } from "framer-motion";
 import OurServices from "./OurServices";
@@ -7,6 +8,8 @@ import Button from "../../components/Button";
 import { FaArrowRight } from "react-icons/fa6";
 
 function OurServicesSection() {
+  const { t } = useT("services");
+  const { t: tCommon } = useT("common");
   return (
     <div className="relative">
       <OurServices className="pt-60 pb-30" />
@@ -18,7 +21,7 @@ function OurServicesSection() {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-bold text-[#585656] mb-4"
         >
-          خدماتنا
+          {t("title")}
         </motion.div>
 
         <motion.div
@@ -28,8 +31,7 @@ function OurServicesSection() {
           viewport={{ once: true }}
           className="text-gray-600 max-w-2xl mx-auto w-80 md:w-full "
         >
-          عملكم محل اهتمامنا لذلك نقدم لكم مجموعة من الخدمات المتميزة لنساهم في
-          تنمية أعمالكم
+         {t("details")}
         </motion.div>
       </div>
       <motion.div
@@ -40,7 +42,7 @@ function OurServicesSection() {
         className="w-fit absolute bottom-10 right-20 sm:right-65 lg:right-100 xl:right-150 2xl:right-162"
       >
         <Button href="/ourServices">
-          عرض جميع الخدمات
+          {tCommon("btn.showAllServices")}
           <FaArrowRight />
         </Button>
       </motion.div>

@@ -1,5 +1,7 @@
 "use client";
 
+import { useT } from "next-i18next/client";
+
 import Image from "next/image";
 
 import { MdWhatsapp } from "react-icons/md";
@@ -13,6 +15,9 @@ import Button from "./Button";
 
 function Navbar() {
   const { isOpen, toggleDropdown } = useDropdown();
+const { t: tCommon,i18n } = useT("common");
+
+const lang=i18n.language;
 
   return (
     <nav
@@ -41,20 +46,20 @@ function Navbar() {
 
         <div className="hidden md:flex md:flex-initial md:justify-center xl:justify-end md:w-60 xl:w-50 text-black">
           <Button href="https://wa.me/201142563801">
-            تواصل معنا
+              {tCommon("btn.whatsapp")}
             <MdWhatsapp />
           </Button>
         </div>
         {isOpen ? (
           <div
-            className="md:hidden bg-red-600 w-9 h-9 flex justify-center items-center absolute left-12 bottom-10 text-3xl text-white"
+             className={`md:hidden bg-red-600 w-9 h-9 flex justify-center items-center absolute ${lang=="ar"?"left-12":"right-12"}  bottom-10 text-3xl text-white`}
             onClick={() => toggleDropdown()}
           >
             <IoMdClose />
           </div>
         ) : (
           <div
-            className="md:hidden bg-red-600 w-9 h-9 flex justify-center items-center absolute left-12 bottom-10 text-3xl text-white"
+            className={`md:hidden bg-red-600 w-9 h-9 flex justify-center items-center absolute ${lang=="ar"?"left-12":"right-12"}  bottom-10 text-3xl text-white`}
             onClick={() => toggleDropdown()}
           >
             <IoMenuOutline />
