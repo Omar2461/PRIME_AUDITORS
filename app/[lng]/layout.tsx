@@ -41,8 +41,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { lng: string };
+  params: Promise<{ lng: string }>
 }) {
+
   const { lng } = await params;
 
   const { i18n } = await getT(lng);
