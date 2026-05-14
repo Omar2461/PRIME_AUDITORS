@@ -15,6 +15,8 @@ export default function Hero() {
   const { t, i18n } = useT("home");
   const { t: tCommon } = useT("common");
 
+
+
   const lang = i18n.language;
 
   return (

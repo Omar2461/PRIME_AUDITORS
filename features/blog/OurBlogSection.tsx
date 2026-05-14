@@ -2,7 +2,6 @@
 
 import { useT } from "next-i18next/client";
 
-import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import Blog from "./Blog";
 import Button from "../../components/Button";
@@ -14,8 +13,6 @@ function OurBlogSection() {
   const { t: tCommon } = useT("common");
 
   const lang = i18n.language;
-  const pathName = usePathname();
-  const currentLang = pathName.split("/")[1];
 
   return (
     <div className="flex justify-center relative bg-white">
@@ -50,9 +47,9 @@ function OurBlogSection() {
         whileInView={{ opacity: 1, y: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="w-fit absolute bottom-10 right-20 sm:right-65 lg:right-100 xl:right-150 2xl:right-162"
+        className="w-fit absolute bottom-10 right-22 sm:right-65 lg:right-100 xl:right-150 2xl:right-162"
       >
-        <Button href={`/${currentLang}/blog`}>
+        <Button href="/blog">
           {tCommon("btn.showAllServices")}
           <FaArrowRight />
         </Button>

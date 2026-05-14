@@ -39,7 +39,7 @@ function OurServicesSection() {
         whileInView={{ opacity: 1, y: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="w-fit absolute bottom-10 right-20 sm:right-65 lg:right-100 xl:right-150 2xl:right-162"
+        className="w-fit absolute bottom-10 right-22 sm:right-65 lg:right-100 xl:right-150 2xl:right-162"
       >
         <Button href="/ourServices">
           {tCommon("btn.showAllServices")}

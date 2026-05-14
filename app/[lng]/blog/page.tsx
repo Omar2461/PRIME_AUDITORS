@@ -4,9 +4,17 @@ import Blog from "@/features/blog/Blog";
 import Pane from "@/components/Pane";
 import Footer from "@/components/Footer";
 
-async function page() {
-  const { t } = await getT("blog");
+type Props = {
+  params: Promise<{
+    lng: string;
+  }>;
+};
 
+async function page({ params }: Props)  {
+  const { lng } = await params;
+  
+  const { t } = await getT("blog", { lng });
+  
   return (
     <>
       <Pane

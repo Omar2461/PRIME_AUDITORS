@@ -8,7 +8,6 @@ const i18nConfig: I18nConfig = {
 
   //  reloadOnPrerender: process.env.NODE_ENV === 'development',
 
-  // Recommended: works on all platforms including Vercel/serverless
   resourceLoader: (language, namespace) =>
     import(`./app/i18n/locales/${language}/${namespace}.json`),
 }

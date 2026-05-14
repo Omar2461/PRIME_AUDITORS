@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 export default async function Page() {
   const cookieStore = await cookies();
 
-  const lang = cookieStore.get("lng")?.value || "en";
+  const lang = cookieStore.get("lng")?.value || "ar";
 
   redirect(`/${lang}`);
 }

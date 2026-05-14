@@ -6,8 +6,16 @@ import Pane from "../../../components/Pane";
 import ClientsSection from "@/features/clientPart/ClientsSection";
 import Footer from "@/components/Footer";
 
-async function page() {
-  const { t } = await getT("aboutUs");
+type Props = {
+  params: Promise<{
+    lng: string;
+  }>;
+};
+
+async function page({ params }: Props) {
+  const { lng } = await params;
+
+  const { t } = await getT("aboutUs", { lng });
 
   return (
     <div>
