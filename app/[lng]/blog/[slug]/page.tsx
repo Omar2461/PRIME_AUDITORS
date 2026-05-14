@@ -6,7 +6,7 @@ import Pane from "@/components/Pane";
 import type { Metadata } from "next";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; lng: string }>;
 };
 
 // export async function generateStaticParams() {
@@ -28,11 +28,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
-  const { t } = await getT("blog");
-  const { slug } = await params;
+  const { slug, lng } = await params;
+  const { t } = await getT("blog", { lng });
+
   const data = blogData.find((item) => item.slug === slug);
-  const date=t(`blogs.${data?.title}.date`);
-  const title=t(`blogs.${data?.title}.title`);
+  const date = t(`blogs.${data?.title}.date`);
+  const title = t(`blogs.${data?.title}.title`);
   return (
     <>
       <Pane title={title} date={date} />

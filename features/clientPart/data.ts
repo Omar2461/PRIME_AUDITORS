@@ -15,4 +15,5 @@ export const Clients = [
   "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/779_qxwu3p.jpg",
   "https://res.cloudinary.com/dijoz9ie7/image/upload/v1777714272/rooya-group-1667464945_qs1sby.webp",
   "https://res.cloudinary.com/dijoz9ie7/image/upload/v1778348977/WhatsApp_Image_2026-05-09_at_1.42.51_PM_xg7azv.jpg",
+  "https://res.cloudinary.com/dijoz9ie7/image/upload/v1778782227/EMPOWER_t1qwhi.png",
 ];
